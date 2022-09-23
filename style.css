@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #21325b;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  color: #f7faff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* **************** Body ******************* */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.first-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+.logo {
+  width: 40%;
+  line-height: 1.5em;
+}
+
+.logo h3 {
+  padding-bottom: 2em;
+}
+
+.first-section-bundle {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.bundle-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  border: 0.1px solid #2f3f65;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0.5em;
+
+  padding-right: 1em;
+}
+
+.privecy {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.privecy span {
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #66728e;
+}
+
+.icons {
+  display: flex;
+  align-self: flex-end;
+}
+
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8e98a7;
+  text-align: center;
+}
+.fourth-section p {
+  margin-top: 1em;
+}
+
+/*                      middle                      */
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .first-section-bundle {
+    width: 100%;
+  }
+  .fourth-section {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .fourth-section p {
+    margin-top: 1em;
+  }
+  .third-section {
+    padding-left: 1em;
+  }
+  .fourth-section {
+    padding-left: 1em;
+  }
+}
+
+/*                      small                       */
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: 1em;
+  }
+  .first-section-bundle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .bundle-item {
+    margin: 1em;
+  }
+
+  .privecy {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .icons {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
